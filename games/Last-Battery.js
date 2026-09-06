@@ -255,11 +255,12 @@ function findPath(startX, startY, targetX, targetY) {
       const targetTile = getTile(nextX, nextY)
       let blocked = false
 
-      for (const sprite of targetTile) {
-        if (sprite.type === wall) {
-          blocked = true
-        }
-      }
+for (const sprite of targetTile) {
+  if (sprite.type === wall) {
+    blocked = true
+    break
+  }
+}
 
       if (blocked) continue
 
