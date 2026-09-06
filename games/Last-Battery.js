@@ -190,7 +190,7 @@ function updateEnergy() {
   if (energy <= 5 && energy > 0) {
     addText("!", {
       x: 10,
-      y: 14
+      y: 13
     })
   }
 
